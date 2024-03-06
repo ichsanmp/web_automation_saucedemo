@@ -36,7 +36,7 @@ public class detailProductPage {
         String expectedDisplayed = driver.findElement(text_prodCompare(product)).getText();
         System.out.println(
                 actualDisplayed.equals(expectedDisplayed) ? "The page is match" : "The page is not match" +
-                        "\nDisplayed page :" + actualDisplayed + "\nExpected display page" + expectedDisplayed
+                        "\nDisplayed page : " + actualDisplayed + "\nExpected display page : " + expectedDisplayed
         );
     }
 }

@@ -3,6 +3,7 @@ package com.SauceDemo.stepDef;
 import com.SauceDemo.page.detailProductPage;
 import com.SauceDemo.page.homePage;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class detailProduct {
@@ -28,5 +29,10 @@ public class detailProduct {
     @And("user is on product {string} page")
     public void userIsOnDetailProductPage(String titleProd) {
         detailProductP.validateDetailProd(titleProd);
+    }
+
+    @Then("product detail page displayed does not display {string} page")
+    public void productDetailPageDisplayedDoesNotDisplayPage(String product) {
+        detailProductP.actualDisplayedPage(product);
     }
 }
